@@ -1,0 +1,48 @@
+
+	.blinking{
+	animation:blinkingText 0.8s infinite;
+}
+@keyframes blinkingText{
+	0%{		color: #000;	}
+	49%{	color: transparent;	}
+	50%{	color: transparent;	}
+	99%{	color:transparent;	}
+	100%{	color: #000;	}
+}
+/*https://jsfiddle.net/hajtwbot/*/
+
+h1 {
+	text-align: center;
+}
+
+h2{	
+	font-size: 2em;
+}
+
+body{
+	font-family: sans-serif;
+}
+
+@media only screen and (max-width: 560px){
+	body{
+		background-color: black;
+		color: white;
+	}
+	h1{
+		font-family: serif;
+
+	}
+
+	.blinking{
+	animation:blinkingText 0.8s infinite;
+}
+@keyframes blinkingText{
+	0%{		color: #000;	}
+	49%{	color: red;	}
+	50%{	color: blue;	}
+	99%{	color: white;	}
+	100%{	color: #000;	}
+}
+/*https://jsfiddle.net/hajtwbot/*/
+}
+
